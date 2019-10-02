@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // THANK YOU TREVOR FOR THE CODE REVIEW! My function had similar objects and properties, but placed in incorrect parameters. Def need to work on my arrays though.
 
