@@ -20,45 +20,56 @@ var Seattle = {
         return result;
     },
     totalSum: function () {
-      var cookieSum = 0;
-      for (var i = 0; i <= this.storeHours.length; i++) {
-        cookieSum += this.cookiesPurchased()[0];
-      }
-      return cookieSum.toLocaleString();
+        var cookieSum = 0;
+        for (var i = 0; i <= this.storeHours.length; i++) {
+          cookieSum += this.cookiesPurchased()[0];
+        }
+        return cookieSum.toLocaleString();
     },
     render: function() {
-      var section = document.getElementById('container');
-      var ul = document.createElement('ul');
-      ul.className = 'cookies';
-      ui.innerHTML = `<h2>${this.location}</h2>`;  //will need to be changed. Check around 40min mark
-      section.appendChild(ul);
+        var section = document.getElementById('container');
+        var ul = document.createElement('ul');
+        ul.className = 'cookies';
+        ui.innerHTML = `<h2>${this.location}</h2>`;  //will need to be changed. Check around 40min mark
+        section.appendChild(ul);
+        
+        for (var i = 0; i <= this.storeHours.length -1; i++) {
+            console.log('hours', this.storeHours[i]);
+            var li = document.createElement('li');
+            li.textContent = `
+            ${this.storeHours[i]}: $(this.cookiesPurchased()[i]) cookies
+            `;
+        ul.appendChild(li);
     }
-  }
+    li.textContent = `Total: ${this.totalSum()} cookies`;
+    ul.appendChild(li);
+    }
+};
   
 
-var Tokyo = {
-    min: 3,
-    max: 25,
-    avg: 1.2
-}
+// var Tokyo = {
+//     min: 3,
+//     max: 25,
+//     avg: 1.2
+// }
 
-var Dubai = {
-    min: 11,
-    max: 38,
-    avg: 3.7
-}
+// var Dubai = {
+//     min: 11,
+//     max: 38,
+//     avg: 3.7
+// }
 
-var Paris = {
-    min: 20,
-    max: 38,
-    avg: 2.3,
-}
+// var Paris = {
+//     min: 20,
+//     max: 38,
+//     avg: 2.3,
+// }
 
-var Lima = {
-    min: 2,
-    max: 16,
-    avg: 4.6
-}
+// var Lima = {
+//     min: 2,
+//     max: 16,
+//     avg: 4.6
+// }
 
 
 // function randomCust(min, max) {
