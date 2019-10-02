@@ -24,7 +24,14 @@ var Seattle = {
       for (var i = 0; i <= this.storeHours.length; i++) {
         cookieSum += this.cookiesPurchased()[0];
       }
-      return 
+      return cookieSum.toLocaleString();
+    },
+    render: function() {
+      var section = document.getElementById('container');
+      var ul = document.createElement('ul');
+      ul.className = 'cookies';
+      ui.innerHTML = `<h2>${this.location}</h2>`;  //will need to be changed. Check around 40min mark
+      section.appendChild(ul);
     }
   }
   
