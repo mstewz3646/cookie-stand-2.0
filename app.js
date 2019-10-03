@@ -224,3 +224,20 @@ var Lima = {
   ul.appendChild(li);
   }
 };
+
+
+// constructor 
+
+// function Store(city, minCust, maxCust, aveCookiesHour, ttlCookiesDay) {
+//     this.city = city;
+//     this.minCust = minCust;
+//     this.maxCust = maxCust;
+//     this.aveCookiesHour = aveCookiesHour;
+//     this.ttlCookiesDay = ttlCookiesDay;
+// }
+
+
+
+
+
+}
