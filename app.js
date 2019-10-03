@@ -236,6 +236,18 @@ var Lima = {
 //     this.ttlCookiesDay = ttlCookiesDay;
 // }
 
+// create table footer
+
+// var createTablefooter = function() {
+//     var tableFooter = document.createElement('tfoot');
+//     var row = document.createElement('tr');
+//     var table = document.getElementById('table');
+//     var td = document.createElement('td');
+//     table.appendChild(tableFooter);
+// }
+
+
+
 
 
 
