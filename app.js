@@ -226,6 +226,10 @@ var Lima = {
 };
 
 
+var storeHours: ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'],
+
+var 
+
 // constructor 
 
 // function Store(city, minCust, maxCust, aveCookiesHour, ttlCookiesDay) {
@@ -235,6 +239,11 @@ var Lima = {
 //     this.aveCookiesHour = aveCookiesHour;
 //     this.ttlCookiesDay = ttlCookiesDay;
 // }
+
+
+
+
+
 
 // create table footer
 
@@ -246,10 +255,22 @@ var Lima = {
 //     table.appendChild(tableFooter);
 // }
 
-
-
-
-
-
-
 }
+
+
+public class MyClass {
+  public static void main(String[] args) {
+    int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
+   
+    for (int i = 0; i < myNumbers.length; ++i) {
+      for(int j = 0; j < myNumbers[i].length; ++j) {
+        System.out.println(myNumbers[i][j]);
+      }
+    }
+  }
+}
+
+
+
+var totalPerHour = 0
+  for (i=0; i<)
