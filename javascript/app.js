@@ -1,15 +1,28 @@
 'use strict';
 
-// THANK YOU TREVOR FOR THE CODE REVIEW! My function had similar objects and properties, but placed in incorrect parameters. Def need to work on my arrays though.
 
-var Seattle = {
-    location: 'Seattle',
-    minCust: 23,
-    maxCust: 65,
-    avgCookies: 6.3,
-    storeHours: ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'],
+
+var storeHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'],
     
-    randomNumCustomer: function() {
+var storeHourlySales = []
+var storeInfo = [
+  ['Seattle', 23, 65, 6.3, [], 0],
+  ['Tokyo', 3, 24, 1.2, [], 0],
+  ['Dubai', 11, 38, 3.7, [], 0],
+  ['Lima', 2, 16, 4.6, [],0]
+]; 
+
+var store = function store(city, minCust, maxCust, aveCookiesHour, ttlCookiesDay) {
+  this.city = city;
+  this.minCust = minCust;
+  this.maxCust = maxCust;
+  this.aveCookiesHour = aveCookiesHour;
+  this.ttlCookiesDay = ttlCookiesDay;
+ };
+    
+
+
+randomNumCustomer: function() {
         return Math.floor(Math.random() * (this.maxCust - this.minCust) + this.minCust);
     },
     cookiesPurchased: function () {
@@ -230,15 +243,7 @@ var storeHours: ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm
 
 var 
 
-// constructor 
 
-// function Store(city, minCust, maxCust, aveCookiesHour, ttlCookiesDay) {
-//     this.city = city;
-//     this.minCust = minCust;
-//     this.maxCust = maxCust;
-//     this.aveCookiesHour = aveCookiesHour;
-//     this.ttlCookiesDay = ttlCookiesDay;
-// }
 
 
 
